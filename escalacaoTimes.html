@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escalação do time</title>
+    <!-- Construa uma página web que permita montar a escalação de um time de jogadores. Nele deverá ser possível: -->
+  </head>
+  <body>
+    <h2>Escalação do time</h2>
+
+    <hr />
+
+    <h4>Escalar Jogador</h4>
+
+    <!-- - Escalar um jogador
+    - Informar a posição do jogador a ser escalado para o time.
+    - Informar o nome do jogador.
+    - Informar o número da camisa do jogador.
+    - Ter um botão “Escalar” que pergunta ao usuário se ele deseja confirmar a escalação daquele jogador e então insere as informações em uma lista na página.
+    - Após o jogador ser escalado os campos de texto devem ser limpos. -->
+
+    <p>
+      <label for="posicao">Posição: </label>
+      <input type="text" name="posicao" id="posicao" />
+
+      <label for="nomeJogador">Nome do jogador: </label>
+      <input type="text" name="nomeJogador" id="nomeJogador" />
+
+      <label for="numeroCamisa">Número da camisa: </label>
+      <input type="number" name="numeroCamisa" id="numeroCamisa" />
+
+      <button onclick="escalarJogador()">Escalar um jogador</button>
+    </p>
+
+    <hr />
+
+    <h4>Remover Jogador</h4>
+
+    <!--     - Remover um jogador
+    - Informar o número da camisa do jogador.
+    - Ter um botão “Remover” que pergunta ao usuário se ele deseja confirmar a remoção daquele jogador e então exclui ele da lista na página.
+    - Após o jogador ser removido o campo de texto deve ser limpo. -->
+
+    <p>
+      <label for="numeroRemover">Número da camisa: </label>
+      <input type="number" name="numeroRemover" id="numeroRemover" />
+      <button onclick="removerJogador()">Remover um jogador</button>
+    </p>
+
+    <h2>Escalação</h2>
+    <ul id="time"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
